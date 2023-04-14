@@ -1,4 +1,6 @@
 source "https://rubygems.org"
+ ruby "3.0.2"
+
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.2"
@@ -34,6 +36,6 @@ group :test do
 end
 
 group :production do
-  gem "pg"
+  gem "pg" , "~> 1.4.6"
 
 end
